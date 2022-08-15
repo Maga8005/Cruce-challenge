@@ -1,38 +1,341 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Light"; /*Can be any text*/
+  src: local("NeueMachina-Light"),
+    url("./fonts/NeueMachina-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Regular";
+  src: local("NeueMachina-Regular"),
+    url("./fonts/NeueMachina-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Ultrabold";
+  src: local("NeueMachina-Light"),
+    url("./fonts/NeueMachina-Ultrabold.otf") format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Inter-Light";
+  src: local("Inter-Light-BETA"),
+    url("./fonts/Inter-Light-BETA.ttf") format("truetype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Inter-Regular";
+  src: local("Inter-Regular"),
+    url("./fonts/Inter-Regular.ttf") format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter-Bold"), url("./fonts/Inter-Bold.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.refBorder {
+  border: solid blue 1px;
+}
+
+/************* Estilos Nav Menu ***********/
+
+.navMenu {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.navMenu2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.navMenu li {
+  list-style-type: none;
+  font-family: "Ultrabold";
+  font-size: 16px;
+  color: grey;
+  padding: 3px 10px;
+}
+
+.menu1 {
+  display: flex;
+  /* display: none; */
+}
+
+.menu2 {
+  display: flex;
+  margin-right: 20px;
+}
+
+.title {
+  font-family: "Ultrabold";
+}
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon-menu {
+  height: 60%;
+  padding-left: 5px;
+}
+
+#hamburger-icon {
+  padding-left: 20px;
+}
+
+#cruce-logo {
+margin-left: 30vw;
+}
+
+#highlight {
+  color: #000;
+}
+
+#hotSale {
+  border: solid red 2px;
+}
+
+#position1 {
+  left: 22px;
+  top: -13px;
+}
+
+#position2 {
+  left: 108px;
+  top: -13px;
+}
+#position3 {
+  left: 10px;
+  top: 13px;
+}
+#position4 {
+  left: 96px;
+  top: 13px;
+}
+
+#lupa {
+  border: solid 2px grey;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#carrito {
+  display: flex;
+  align-items: baseline;
+  color: red;
+}
+
+#highligth-morado {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #7d5a94;
+  padding: 3px 0;
+}
+
+#highligth-morado p {
+  font-family: Inter-Bold;
+  font-size: 13px;
+  padding-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#highligth-morado img {
+  margin: 0 20px;
+}
+
+#buscador{
+  display: flex;
+  border: 1px solid #8C8C8C;
+  border-radius: 3px;
+  margin: 10px 20px;
+}
+
+#buscador p{
+  color:#8C8C8C;
+  margin: 10px;
+}
+
+#buscador img{
+  margin: 10px;
+}
+
+/************* Estilos Sección Envio ***********/
+
+.envio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:center;
+}
+
+.envio-cards {
+  display: flex;
+  flex: none;
+  font-family: "Ultrabold";
+  margin: 20px;
+}
+
+.envio p {
+  margin-left: 20px;
+}
+
+#envio-icon {
+  width: 30px;
+}
+
+#p-red {
+  font-family: "Inter-Regular";
+  font-weight: 700;
+  font-size: 13px;
+  color: red;
+}
+
+.linea {
+  width: 1px;
+  height: 50px;
+  margin: 20px 0;
+  rotate: 30deg;
+  background: #c8c8c8;
+  
+}
+
+/************* Estilos Sección Productos ***********/
+.lista-productos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/******* Estilos Card ********/
+.prodCard {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  padding: 20px;
+  width: 48%;
+  /* margin: 5px; */
+}
+.img-prod {
+  display: flex;
+  justify-content: center;
+}
+.prodCard img {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.prodCard p {
+  font-family: "Inter-Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+#nombre {
+  font-family: "Ultrabold";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  color:#7D5A94;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.cuotas{
+  margin-top: 15px;
+  color:#505050;
+}
+
+#precio-total{
+  font-weight: 700;
+}
+
+#precio-sinDesc {
+  color:#505050;
+  text-decoration: line-through;
+
+}
+
+#precio-final{
+  color: red;
+  font-weight: 700;
+}
+
+.prodCard h5 {
+  font-family: "Inter-Regular";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+/************* Botones ***********/
+
+.control {
+  background-color: #fff;
+  border: 1px solid #bfbfbf;
+  border-radius: 50%;
+  padding: 7px 10px;
+  margin: 0px;
+}
+
+.control-der {
+  position:absolute;
+  right: 20px;
+}
+
+.control-izq {
+  transform: rotate(180deg);
+  position:absolute;
+  left: 20px;
+}
+
+.control img {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-carrito-compra {
+  margin-top: 12px;
+  background-color: #fff;
+  padding: 12px 14px;
+  border: solid 2px #76B043;
+  border-radius: 5px;
+}
+
+
+/************* Media Query ***********/
+
+@media (361px <= width <= 768px){
+  .prodCard {
+    width: 30%;
   }
 }
+@media (width >= 769px) {
+  .prodCard {
+    width: 22%;
+  }
+  .control {
+    display: none;
+  }
+}
+
+/* .prodCard {
+  border: solid red 1px;
+} */
