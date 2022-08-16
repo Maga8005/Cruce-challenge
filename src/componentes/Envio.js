@@ -5,7 +5,7 @@ function Envio(){
   return(
     <div>
       <div className="envio">
-        <div className="control-izq">
+        <div className="control-izq pos-izq control-display">
         <Control />
         </div>
         <div className="envio-cards">
@@ -31,7 +31,7 @@ function Envio(){
             <p id="p-red">¡Sin interés!</p>
           </div>
         </div>
-        <div className="control-der">
+        <div className="control-der pos-der control-display">
         <Control />
         </div>
       </div>

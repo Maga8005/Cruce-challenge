@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "nombre": "Jansport",
+    "imagen": "/img/1.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 15,
+    "destacado-dia": 0,
+    "novedad": 1,
+    "recomendado": 0
+  },
+  {
+    "id": 2,
+    "nombre": "Jansport",
+    "imagen": "/img/2.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 25,
+    "destacado-dia": 0,
+    "novedad": 1,
+    "recomendado": 0
+  },
+  {
+    "id": 3,
+    "nombre": "Jansport",
+    "imagen": "/img/1.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 15,
+    "destacado-dia": 0,
+    "novedad": 1,
+    "recomendado": 0
+  },
+  {
+    "id": 4,
+    "nombre": "Jansport",
+    "imagen": "/img/2.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 25,
+    "destacado-dia": 0,
+    "novedad": 1,
+    "recomendado": 0
+  }
+]

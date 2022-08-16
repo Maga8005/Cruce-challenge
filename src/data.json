@@ -8,7 +8,7 @@
     "cuotas": 6,
     "interes": 211.5,
     "descuento": 10,
-    "destacado-dia": 1,
+    "destacado": 1,
     "novedad": 1,
     "recomendado":1 
   },
@@ -21,7 +21,7 @@
     "cuotas": 4,
     "interes": 210,
     "descuento": 0,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 0,
     "recomendado":0 
   },
@@ -34,7 +34,7 @@
     "cuotas": 3,
     "interes": 180,
     "descuento": 0,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 1,
     "recomendado":1 
   },
@@ -47,7 +47,7 @@
     "cuotas": 5,
     "interes": 180,
     "descuento": 20,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 0,
     "recomendado":0 
   },
@@ -60,7 +60,7 @@
     "cuotas": 6,
     "interes": 211.5,
     "descuento": 10,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 0,
     "recomendado":0 
   },
@@ -73,7 +73,7 @@
     "cuotas": 8,
     "interes": 150,
     "descuento": 0,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 0,
     "recomendado":0 
   },
@@ -86,7 +86,7 @@
     "cuotas": 6,
     "interes": 211.5,
     "descuento": 15,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 0,
     "recomendado":0 
   },
@@ -99,60 +99,8 @@
     "cuotas": 6,
     "interes": 211.5,
     "descuento": 0,
-    "destacado-dia": 0,
+    "destacado": 0,
     "novedad": 0,
-    "recomendado":0 
-  },
-  {
-    "id": 9,
-    "nombre": "Funko",
-    "imagen": "/img/5068.png",
-    "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
-    "categoria": "juguete",
-    "cuotas": 6,
-    "interes": 211.5,
-    "descuento": 0,
-    "destacado-dia": 0,
-    "novedad": 0,
-    "recomendado":0 
-  },
-  {
-    "id": 10,
-    "nombre": "Funko",
-    "imagen": "/img/12215-PX-1Q1.png",
-    "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
-    "categoria": "juguete",
-    "cuotas": 6,
-    "interes": 211.5,
-    "descuento": 0,
-    "destacado-dia": 0,
-    "novedad": 0,
-    "recomendado":0 
-  },
-  {
-    "id": 11,
-    "nombre": "Jansport",
-    "imagen": "/img/1.png",
-    "descripcion": "Mochila Madalyn Floral",
-    "categoria": "maleta",
-    "cuotas": 6,
-    "interes": 211.5,
-    "descuento": 15,
-    "destacado-dia": 0,
-    "novedad": 1,
-    "recomendado":0 
-  },
-  {
-    "id": 12,
-    "nombre": "Jansport",
-    "imagen": "/img/2.png",
-    "descripcion": "Mochila Madalyn Floral",
-    "categoria": "maleta",
-    "cuotas": 6,
-    "interes": 211.5,
-    "descuento": 25,
-    "destacado-dia": 0,
-    "novedad": 1,
     "recomendado":0 
   }
 ]
