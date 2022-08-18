@@ -4,6 +4,7 @@ import Card from "./CardProduct";
 import Destacado from "./SubComponents/Destacado";
 import Boton2 from "./SubComponents/Boton2";
 
+const cardData = data.filter((element) => element.categoria === "juguete");
 const card = function (cardData, index) {
   return (
     <Card
@@ -20,15 +21,13 @@ const card = function (cardData, index) {
 };
 
 function ProductList() {
-  // let {categoria} = data.categoria;
   return (
     <div>
       <div id="page-prod">
         
         <div className="lista-productos">
           {
-            // (categoria === "juguete")&&
-            Array.isArray(data) && data.map(card)
+            Array.isArray(cardData) && cardData.map(card)
           }
         </div>
         <div className="desta-boton">

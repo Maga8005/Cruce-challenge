@@ -11,9 +11,34 @@
     "destacado": 1,
     "novedad": 1,
     "recomendado":1 
+  },  {
+    "id": 2,
+    "nombre": "Jansport",
+    "imagen": "/img/2.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 15,
+    "destacado-dia": 0,
+    "novedad": 0,
+    "recomendado":0 
   },
   {
     "id": 2,
+    "nombre": "Jansport",
+    "imagen": "/img/1.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 15,
+    "destacado-dia": 0,
+    "novedad": 1,
+    "recomendado":0 
+  },
+  {
+    "id": 3,
     "nombre": "Funko",
     "imagen": "/img/5068.png",
     "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
@@ -26,7 +51,7 @@
     "recomendado":0 
   },
   {
-    "id": 3,
+    "id": 4,
     "nombre": "Funko",
     "imagen": "/img/12215-PX-1Q1.png",
     "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
@@ -39,7 +64,7 @@
     "recomendado":1 
   },
   {
-    "id": 4,
+    "id": 5,
     "nombre": "Funko",
     "imagen": "/img/12216-PX-1Q1.png",
     "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
@@ -52,7 +77,7 @@
     "recomendado":0 
   },
   {
-    "id": 5,
+    "id": 6,
     "nombre": "Funko",
     "imagen": "/img/12217-PX-1Q1.png",
     "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
@@ -65,7 +90,7 @@
     "recomendado":0 
   },
   {
-    "id": 6,
+    "id": 7,
     "nombre": "Funko",
     "imagen": "/img/29164.png",
     "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
@@ -78,7 +103,7 @@
     "recomendado":0 
   },
   {
-    "id": 7,
+    "id": 8,
     "nombre": "Funko",
     "imagen": "/img/4048.png",
     "descripcion": "Funko POP | Game Of Thrones - Daenerys 25",
@@ -101,6 +126,19 @@
     "descuento": 0,
     "destacado": 0,
     "novedad": 0,
+    "recomendado":0 
+  },
+  {
+    "id": 9,
+    "nombre": "Jansport",
+    "imagen": "/img/1.png",
+    "descripcion": "Mochila Madalyn Floral",
+    "categoria": "maleta",
+    "cuotas": 6,
+    "interes": 211.5,
+    "descuento": 15,
+    "destacado-dia": 0,
+    "novedad": 1,
     "recomendado":0 
   }
 ]
