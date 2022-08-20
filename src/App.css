@@ -469,6 +469,17 @@ height: 30px;
   margin: 0px 10px;
 }
 
+/************* Sección Termina ***********/
+
+.tit-termina {
+  font-family: "Ultrabold";
+  color: #505050;
+  font-weight: 800;
+font-size: 27px;
+}
+
+
+
 
 #img-1{
   position: absolute;

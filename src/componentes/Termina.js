@@ -1,10 +1,16 @@
 import React from "react";
+import Tiempo from "./SubComponents/Tiempo"
+
 
 function Termina() {
   return (
     <div className="buscado">
       <div className="cont-tit-buscado">
-        <p className="tit-buscado">Termina en</p>
+        <p className="tit-termina">Termina en:</p>
+      </div>
+      <div>
+        <Tiempo
+        contadorstampMs = {1659983662000} />
       </div>
 
       <div className="card-buscado">
