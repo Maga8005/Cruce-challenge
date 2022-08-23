@@ -27,13 +27,16 @@ const Contador = ({contadorstampMs})=> {
 
 
     return(
-      <div>
-        <div>
-          <span>{tiempo.horas}</span>
+      <div className="contador">
+        <div className="cont-tiempo">
+          <span>12</span>
+          <span>:02</span>
+          <span>:07</span>
+          {/* <span>{tiempo.horas}</span>
           <span>{tiempo.minutos}</span>
-          <span>{tiempo.segundos}</span>
+          <span>{tiempo.segundos}</span> */}
         </div>
-        <div>
+        <div className="cont-subtitulo" >
           <span>HS</span>
           <span>min</span>
           <span>seg</span>

@@ -184,7 +184,8 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 70px;
 }
 
 .envio-cards {
@@ -338,7 +339,13 @@ height: 30px;
 }
 
 .logo-marcas ul {
-  display: flex;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  margin: auto;
   list-style-type: none;
 }
 
@@ -350,6 +357,7 @@ height: 30px;
   background: #ffffff;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+  display: inline-block;
 }
 
 /************* Sección Juguete Día ***********/
@@ -450,18 +458,34 @@ height: 30px;
   width: auto;
   height: min-content;
 }
-.jansport-card-control {
+/* .jansport-card-control {
   display: flex;
   flex-direction: column;
   width: 25vw;
-}
+} */
 
-.jansport-card{
+/* .jansport-card{
   display: flex;
   flex-wrap: nowrap;
   overflow:auto;
   width: 850px;
   margin-left: 20px;
+} */
+
+.jansport-card{
+  width: 20vw;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: auto;
+}
+
+.jansport-card .prodCard{
+  height:max-content;
+  overflow:auto;
+  margin-left: 20px;
+  display:inline-block;
 }
 
 .jansport-card > div {
@@ -475,11 +499,8 @@ height: 30px;
   font-family: "Ultrabold";
   color: #505050;
   font-weight: 800;
-font-size: 27px;
+  font-size: 25px;
 }
-
-
-
 
 #img-1{
   position: absolute;
@@ -493,6 +514,34 @@ font-size: 27px;
   width: 40%;
 }
 
+.contador{
+  display: flex;  
+  flex-direction: column;
+}
+
+.cont-tiempo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cont-tiempo span {
+  font-family: 'Ultrabold';
+  font-weight: 700;
+  font-size: 27px;
+  color: #EC2227;
+  }
+
+.cont-subtitulo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cont-subtitulo span {
+  color: #505050;
+  font-family: "Inter-Regular";
+  font-weight: 400;
+  font-size: 15px;
+}
 
 
 /************* Sección Lo más buscado y Termina ***********/
@@ -506,7 +555,7 @@ font-size: 27px;
 .cont-tit-buscado{
   display: flex;
   width: 172px;
-  margin: 20px 0;
+  margin: 20px 20px 20px 0;
 }
 
 .tit-buscado{
@@ -529,6 +578,9 @@ color: #76B043;
   width: 100px;
 }
 
+
+
+
 /************* Botones y destacados ***********/
 
 .control {
@@ -541,6 +593,14 @@ color: #76B043;
   margin: 0px;
   width: fit-content;
   margin: 12px;
+}
+
+.control:hover {
+background: #76B043;
+color: #fff;
+border-radius: 50%;
+border: 1px solid #76B043;
+box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
 }
 
 .pos-der {
@@ -656,6 +716,9 @@ color: #76B043;
     margin-top: 80px;
   } */
 
+  .envio{
+    justify-content: center;
+  }
   .lista-productos {
     display: grid;
     grid-column: 1/5;

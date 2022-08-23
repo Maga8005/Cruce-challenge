@@ -1,7 +1,10 @@
 import React from "react";
 import data from "../data.json";
 import Card from "./CardProduct";
-import Control from "./SubComponents/Control";
+import {FaChevronLeft } from "react-icons/fa";
+import {FaChevronRight } from "react-icons/fa";
+
+
 
 const maletas = data.filter((elemento) => elemento.categoria === "maleta");
 
@@ -21,6 +24,17 @@ const card = function (cardData, index) {
 };
 
 function Jansport() {
+
+  const slideleft = () => {
+    let slider = document.getElementById('slider1')
+    slider.scrollLeft = slider.scrollLeft - 200
+  }
+
+  const slideright = () => {
+    let slider = document.getElementById('slider1')
+    slider.scrollLeft = slider.scrollLeft + 200
+  }
+
   return (
     <div className="jansport">
       <div className="jansport-img">
@@ -28,20 +42,20 @@ function Jansport() {
         <img id="img-2" src="/img/jansport2.png" alt="jansport-secundaria" />
       </div>
       <div className="jansport-card-control">
-        <div className="jansport-card">
+        <div id="slider1" className="jansport-card">
           {Array.isArray(maletas) && maletas.map(card)}
         </div>
-        <div className="novedad-control">
-          <p> 4 de 12</p>
-          <div className="d-control">
-            <div className="control-izq control-display1">
-              <Control />
-            </div>
-            <div className="control-der control-display1">
-              <Control />
+          <div className="novedad-control">
+            <p> 4 de 12</p>
+            <div className="d-control">
+              <div className="control control-display1">
+              <FaChevronLeft onClick={slideleft} />
+              </div>
+              <div className="control control-display1">
+              <FaChevronRight onClick={slideright} />
+              </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

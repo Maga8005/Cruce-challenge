@@ -5,14 +5,11 @@ import Tiempo from "./SubComponents/Tiempo"
 function Termina() {
   return (
     <div className="buscado">
-      <div className="cont-tit-buscado">
+      <div className="cont-tit-buscado contador">
         <p className="tit-termina">Termina en:</p>
-      </div>
-      <div>
         <Tiempo
         contadorstampMs = {1659983662000} />
       </div>
-
       <div className="card-buscado">
         <img src="/img/dino.png" alt="dino" />
         <div>

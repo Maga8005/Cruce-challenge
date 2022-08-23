@@ -10,6 +10,7 @@ import MasBuscado from "./componentes/MasBuscado";
 import Novedades from "./componentes/Novedades";
 import Jansport from "./componentes/Jansport";
 import Termina from "./componentes/Termina";
+import Recomendados from "./componentes/Recomendamos";
 
 // import data from './data.json';
 
@@ -29,6 +30,7 @@ function App() {
         <Novedades />
         <Jansport />
         <Termina />
+        <Recomendados />
       </body>
     </div>
   );

@@ -4,7 +4,7 @@ import Card from "./CardProduct";
 import {FaChevronLeft } from "react-icons/fa";
 import {FaChevronRight } from "react-icons/fa";
 
-const novedades = data.filter((element) => element.novedad === 1);
+const recomendado = data.filter((element) => element.recomendado === 1);
 
 const card = function (cardData, index) {
   return (
@@ -21,17 +21,17 @@ const card = function (cardData, index) {
   );
 };
 
-function Novedades() {
+function Recomendados() {
   return (
     <div>
       <div className="novedades">
         <div className="nov-tit">
           <p>
-            Novedades <span>VER TODO</span>
+            Te recomendamos <span>VER TODO</span>
           </p>
         </div>
         <div className="novedad-productos">
-          {Array.isArray(novedades) && novedades.map(card)}
+          {Array.isArray(recomendado) && recomendado.map(card)}
         </div>
       </div>
       <div className="novedad-control">
@@ -49,4 +49,4 @@ function Novedades() {
   );
 }
 
-export default Novedades;
+export default Recomendados;

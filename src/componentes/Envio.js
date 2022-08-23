@@ -1,12 +1,13 @@
 import React from "react";
-import Control from "./SubComponents/Control";
+import ControlDer from "./SubComponents/ControlDer";
+import ControlIzq from "./SubComponents/ControlIzq";
 
 function Envio(){
   return(
     <div>
       <div className="envio">
-        <div className="control-izq pos-izq control-display">
-        <Control />
+        <div className="pos-izq control-display">
+        <ControlIzq />
         </div>
         <div className="envio-cards">
           <img id="envio-icon" src="/img/icon-tarjeta.svg" alt="icono tarjeta"/>
@@ -31,8 +32,8 @@ function Envio(){
             <p id="p-red">¡Sin interés!</p>
           </div>
         </div>
-        <div className="control-der pos-der control-display">
-        <Control />
+        <div className="pos-der control-display">
+        <ControlDer />
         </div>
       </div>
     </div>
