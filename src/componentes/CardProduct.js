@@ -26,6 +26,7 @@ function Card({
       <div className="img-prod">
         <img src={imagen} alt="prod" />
       </div>
+      <div>
       <p className="nombre"> {nombre} </p>
       <p className="descripcion"> {descripcion} </p>
       <p className="cuotas"> {cuotas} Cuotas/interés de</p>
@@ -42,11 +43,14 @@ function Card({
             {[cuotas] * [interes] -
               ([descuento] / 100) * ([cuotas] * [interes])}
           </span>
-          <p id="des-num">{descuento}<span>%</span></p>
-          <img id="logo-promo" src="/img/logo-promo.svg" alt="logo-promo"/>
+          <p id="des-num">
+            {descuento}
+            <span>%</span>
+          </p>
+          <img id="logo-promo" src="/img/logo-promo.svg" alt="logo-promo" />
         </p>
-        
       )}
+      </div>
       <Boton1 />
     </div>
   );

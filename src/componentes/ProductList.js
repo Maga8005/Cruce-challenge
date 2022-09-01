@@ -3,6 +3,7 @@ import data from "../data.json";
 import Card from "./CardProduct";
 import Destacado from "./SubComponents/Destacado";
 import Boton2 from "./SubComponents/Boton2";
+import { useMediaQuery } from "react-responsive";
 
 const cardData = data.filter((element) => element.categoria === "juguete");
 const card = function (cardData, index) {
@@ -21,22 +22,33 @@ const card = function (cardData, index) {
 };
 
 function ProductList() {
+  const Screen = useMediaQuery({ query: "(min-width: 768px)" });
+  const Tablet = useMediaQuery({ query: "(max-width: 767px)" });
   return (
     <div>
-      <div id="page-prod">
+      {Screen && (
         
-        <div className="lista-productos">
-          {
-            Array.isArray(cardData) && cardData.map(card)
-          }
+        <div id="page-prod">
+          <div className="lista-productos">
+            {Array.isArray(cardData) && cardData.map(card)}
+          </div>
+          <div className="desta-boton">
+            <Destacado />
+            <Boton2 />
+          </div>
         </div>
-        <div className="desta-boton">
+      )}
+      {Tablet && (
+        <div id="page-prod">
           <Destacado />
-          <Boton2 />
+          <div className="lista-productos">
+            {Array.isArray(cardData) && cardData.map(card)}
+          </div>
+          <div className="desta-boton">
+            <Boton2 />
+          </div>
         </div>
-     
-      </div>
-
+      )}
     </div>
   );
 }

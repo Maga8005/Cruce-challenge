@@ -186,6 +186,7 @@ a {
   align-items: center;
   justify-content: left;
   margin-left: 70px;
+  margin-top: 30px;
 }
 
 .envio-cards {
@@ -228,6 +229,10 @@ a {
 
 .lista-productos div:nth-child(even) {
   margin-top: 80px;
+}
+
+.destacado h5 {
+  display: none;
 }
 
 /******* Estilos Card ********/
@@ -365,24 +370,27 @@ height: 30px;
 .juguete-dia {
   display: flex;
   flex-direction: column;
-  margin: 30px 40px;
+  margin: 30px 20px;
 }
 
 #juguete-titulo {
-  display: block;
+  display: inline-block;
+  white-space: nowrap;
   font-family: "Inter-Bold";
-  font-size: 100px;
+  font-size: 43px;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #F26522;
   margin-bottom: 20px;
+  margin: auto;
 }
 
 #card-video {
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: nowrap;
+  align-items: center; */
 }
 
 #card-juguete {
@@ -575,10 +583,82 @@ color: #76B043;
 .card-buscado p {
   font-size: 13px;
   font-weight: 400;
-  width: 100px;
+  width: 70px;
 }
 
+/************* Footer ***********/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.footer-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.footer-col ul {
+  width: 30%;
+}
+
+.footer-col li{
+  align-items: center;
+  list-style-type: none;
+
+}
+
+.redes {
+  display: flex;
+}
+
+.footer-col p{
+  margin-left: 13px;
+  font-family: "Ultrabold";
+  font-size: 10px;
+  text-align: center;
+  color: #8C8C8C;
+  padding: 16px 0;
+}
+
+#ofertas{
+  margin-left: 70px;
+}
+
+#oferta-footer p{
+  color: #000;
+  padding-top: 0px;
+  text-align: left;
+  margin: 0px;
+}
+
+#input-footer {
+  font-family: "Inter-Regular";
+  text-align: center;
+  font-size: 13px;
+  color: #8C8C8C;
+  padding: 8px 0px;
+}
+
+#boton-footer {
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-top: 16px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+
+  
+}
+
+#boton-footer p{
+  font-family: "Ultrabold";
+  color: #000;
+  padding: 9px 12px;
+  margin: 0px;
+}
 
 
 /************* Botones y destacados ***********/
@@ -650,7 +730,8 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   border: 2px solid #000;
   box-shadow: 3px 3px 0px #000;
   border-radius: 6px;
-  margin-top: 36px;
+  margin: auto;
+  display: block;
 }
 
 .btn-coleccion p {
@@ -661,10 +742,18 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   line-height: 18px;
 }
 
+.btn-footer{
+  background-color: #fff;
+  border: 0;
+  margin-top:72px;
+  margin-bottom: 72px;
+}
+
 .desta-boton {
   display: flex;
   flex-direction: column;
   z-index: 10;
+  justify-content: center;
 }
 
 .destacado {
@@ -673,10 +762,14 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
 }
 
 .destacado h1 {
+  margin: 30px 0px 0px 20px;
   font-family: "Ultrabold";
   font-weight: 800;
-  font-size: 56px;
+  font-size: 27px;
   line-height: 54px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .destacado p {
@@ -685,6 +778,7 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   font-size: 22px;
   line-height: 24px;
   margin-top: 24px;
+  display: none;
 }
 
 .icon-whatsapp {
@@ -695,7 +789,7 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
 
 /************* Media Query ***********/
 
-@media (361px <= width <= 768px) {
+@media (376px <= width <= 768px) {
   .lista-productos {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -718,6 +812,7 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
 
   .envio{
     justify-content: center;
+    margin-top: 0px;
   }
   .lista-productos {
     display: grid;
@@ -726,6 +821,23 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
     grid-template-columns: subgrid;
     grid-template-rows: subgrid;
   }
+
+  .destacado h1 {
+    display: flex;
+    white-space: normal;
+    font-size: 56px;
+    margin: 0px;
+  }
+
+  .destacado h5 {
+    display: flex;
+  }
+
+  .btn-coleccion{
+    margin-top: 36px;
+    display: inline-block;
+  }
+
   .desta-boton {
     grid-column: 3/5;
     grid-row: 1;
@@ -743,6 +855,23 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   .control-display1 {
     display: flex;
   }
+
+  .juguete-dia {
+    margin: 30px 40px;
+  }
+
+  #juguete-titulo {
+    font-size: 100px;
+  }
+
+  #card-video {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .novedad-productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
