@@ -179,7 +179,7 @@ a {
 
 /************* Estilos Sección Envio ***********/
 
-.envio {
+/* .envio {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -187,6 +187,14 @@ a {
   justify-content: left;
   margin-left: 70px;
   margin-top: 30px;
+} */
+
+.envio {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .envio-cards {
@@ -251,6 +259,15 @@ a {
 .prodCard img {
   width: 100%;
 }
+
+.prodCard .nombre {
+  font-family: "Ultrabold";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  color: #7d5a94;
+  margin-top: 10px;
+}
 .prodCard p {
   font-family: "Inter-Regular";
   font-size: 15px;
@@ -267,15 +284,6 @@ a {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-}
-
-.nombre {
-  font-family: "Ultrabold";
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 18px;
-  color: #7d5a94;
-  margin-top: 10px;
 }
 
 .precio-total {
@@ -298,9 +306,9 @@ height: 30px;
 }
 
 #logo-promo {
-  width: 60px;
+  width: 50px;
   position: relative;
-  top:-230px;
+  top:-290px;
 }
 
 #des-num {
@@ -309,8 +317,8 @@ height: 30px;
   font-weight: 800;
   font-size: 16px;
   color: #fff;
-  top:-182px;
-  left: 15px;
+  top:-248px;
+  left: 10px;
   transform: rotate(-30deg);
   transform-origin: 0 0;
   z-index: 10;
@@ -326,6 +334,7 @@ height: 30px;
 .marcas-seccion {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .marcas-seccion h4 {
@@ -394,7 +403,8 @@ height: 30px;
 }
 
 #card-juguete {
-  width: 35%;
+  align-self: center;
+  width: 60%;
 }
 
 #img-video {
@@ -419,18 +429,26 @@ height: 30px;
 .nov-tit p {
   font-family: "Ultrabold";
   font-weight: 800;
-  font-size: 34px;
+  font-size: 27px;
 }
 
 .nov-tit span{
   font-size: 10px;
-  color: #8C8C8C
+  color: #000;
+  display: block;
 }
 
-.novedad-productos {
+/* .novedad-productos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
+} */
+
+.novedad-productos {
+  display: flex;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .novedad-control {
@@ -671,7 +689,7 @@ color: #76B043;
   border-radius: 50%;
   padding: 10px 10px;
   margin: 0px;
-  width: fit-content;
+  height: fit-content;
   margin: 12px;
 }
 
@@ -721,6 +739,7 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   padding: 12px 14px;
   border: solid 2px #76b043;
   border-radius: 5px;
+  display: none;
 }
 
 .btn-coleccion {
@@ -833,6 +852,10 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
     display: flex;
   }
 
+  .btn-carrito-compra{
+    display: inline-block;
+  }
+
   .btn-coleccion{
     margin-top: 36px;
     display: inline-block;
@@ -848,6 +871,18 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
     width: 80%;
     margin: 0px 20px;
   }
+
+  #logo-promo {
+    width: 60px;
+    position: relative;
+    top:-230px;
+  }
+
+  #des-num {
+    top:-182px;
+    left: 15px;
+  }
+
   .control-display {
     display: none;
   }
@@ -872,10 +907,24 @@ box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
     align-items: center;
   }
 
-  .novedad-productos {
+  /* .novedad-productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  } */
+
+  .nov-tit p {
+    font-size: 34px;
   }
+
+  .nov-tit span{
+    display: inline;
+    color: #8C8C8C;
+  }
+
+  #card-juguete {
+    width: 35%;
+  }
+
 }
 
 /* .prodCard {

@@ -36,10 +36,10 @@ function Novedades() {
       </div>
       <div className="novedad-control">
         <div className="d-control">
-          <div className="control control-display1">
+          <div className="control">
             <FaChevronLeft />
           </div>
-          <div className="control control-display1">
+          <div className="control">
             <FaChevronRight />
           </div>
         </div>
